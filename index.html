@@ -27,7 +27,7 @@
 			    <a class="text-white nav-link" href="#" data-target="#loginModal" data-toggle="modal"><i class="fas fa-sign-in-alt"></i> Log in <span class="sr-only">(Login)</span></a>
 			  </li>
 			  <li class="nav-item">
-			    <button type="button" class=" text-white btn btn-success"><i class="fas fa-user-plus"></i> Register </button>
+			    <button type="button" class=" text-white btn btn-success" data-target="#registerModal" data-toggle="modal" id="register"><i class="fas fa-user-plus"></i> Register </button>
 			  </li>
 			</ul>
 		</div>
@@ -49,7 +49,7 @@
           <div class="card">
             <div class="card-body">
               <div class="text-center h5 mb-3">Welcome back, <i class=" display-3 fas fa-smile-beam"></i>
-                <p class="lead">Please fill out the details here <i class="fas fa-hand-point-down"></i>
+                <p class="lead">Please fill out the details here <i class="fas fa-hand-point-down"></i></p>
               </div>
 
               <form class="mt-3">
@@ -61,8 +61,13 @@
                   <label for="pass" class="h5 col-12 col-sm-3">Password</label>
                   <input type="Password" class="col-12 col-sm-7 offset-sm-1 form-control" id="pass" name="pass" placeholder="Your P******d here">
                 </div>
+
                 <button class="col-4 col-sm-3 offset-sm-4 btn btn-success mt-3" role="button">Login <i class="fas fa-lock"></i></button>
                 <button class="col-4 col-sm-3 btn btn-warning text-white mt-3" role="button" data-dismiss="modal">Cancel <i class="fas fa-times"></i></button>
+                <div class="form-group mt-3 text-center">
+                  <div class="col-12 col-sm-7 offset-sm-4">New user? <a href="#" data-toggle="modal" data-target="#registerModal" data-dismiss="modal">Register</a> instead!
+                  </div>
+                </div>
               </form>
             </div>
           </div>
@@ -72,7 +77,59 @@
       </div>
 
     </div>
+  </div>
 
+  <!-- Now, comes the Register Modal content -->
+
+  <div class="modal fade" id="registerModal" role="dialog">
+    <div class="modal-dialog modal-md" role="content">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <div class="lead"><i class="fas fa-user-plus"></i> Register Form</div>
+          <button  type="button" class="close" data-dismiss="modal" style="color:floralwhite;"><i class="fas fa-times-circle"></i> </button>
+        </div>
+        <div class="modal-body">
+          <div class="card">
+            <div class="card-body">
+              <div class="text-center h5 mb-3">Welcome, <i class=" display-3 fas fa-smile-beam"></i>
+                <p class="lead">Please fill out the details here <i class="fas fa-hand-point-down"></i></p>
+              </div>
+
+              <form>
+                <div class="form-group form-inline">
+                  <label for="name" class="col-12 col-sm-3">Name</label>
+                  <input type="text" id="name" class="form-control col-10 col-sm-8 offset-1">
+                </div>
+                <div class="form-group form-inline">
+                  <label for="emailRegister" class="col-12 col-sm-3">Email</label>
+                  <input type="text" id="emailRegister" class="form-control col-10 col-sm-8 offset-1">
+                </div>
+                <div class="form-group form-inline">
+                  <label for="passRegister" class="col-12 col-sm-3">Password</label>
+                  <input type="text" id="passRegister" class="form-control col-10 col-sm-7 offset-1">
+                </div>
+                <div class='form-group'>
+                  <div class="col-12">By Registering, you agree to our <a href="#">Terms and Conditions</a> </div>
+                </div>
+                <button class="col-5 col-sm-3 offset-sm-4 offset-1 btn btn-success mt-3" role="button">Register <i class="fas fa-lock"></i></button>
+                <button class="col-4 col-sm-3 btn btn-warning text-white mt-3" role="button" data-dismiss="modal">Cancel <i class="fas fa-times"></i></button>
+                <div class="form-group mt-3">
+                  <div class="col-12 col-sm-7 offset-sm-4">Existing user? <a href="#" data-toggle="modal" data-target="#loginModal" data-dismiss="modal">Login</a> instead!
+                  </div>
+                </div>
+
+              </form>
+
+
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
 
   </div>
 
