@@ -56,7 +56,7 @@
 			<div class="col-12">
 				
 				<div class="row justify-content-center">
-					<div class='display-3 col-12 text-center'>Welcome <span class="lead"> [username]</span></div>
+					<div class='display-3 col-12 text-center mt-3'>Welcome <span class="lead"> [username]</span></div>
 				</div>
 				<hr>
 
@@ -68,30 +68,121 @@
 		<div class="row">
 			<div class="col-12 col-md-8">
 				<!-- Column, detailed according to user -->
-				
 				<div class="row mt-3">
-					<div class='h4 col-12'>Events you are enrolled in,</div>
+					<div class='h4 col-12'>Events you are enrolled in, <i class="fas fa-long-arrow-alt-down"></i> </div>
 				</div>
 				<hr>
-			<!--Now, a table showing the events user has enrolled -->
-			
+				<!--Now, a table showing the events user has enrolled -->
+				<div class="row mt-3">
+					<div class="col-11">
+
+						<table class="table text-center table-hover table-responsive-sm">
+							<thead class="table-secondary">
+								<th>Sno</th>
+								<th>Event Name</th>
+								<th>Actions</th>
+
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td><a class="text-dark" href="#">Robo Soccer</a></td>
+									<td>
+										<div class="btn-group">
+											<button class="btn btn-outline-primary">Details</button>
+											<button class="btn btn-outline-warning">Unenroll</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td><a class="text-dark" href="#">Quiz-Saver School</a></td>
+									<td>
+										<div class="btn-group">
+											<button class="btn btn-outline-primary">Details</button>
+											<button class="btn btn-outline-warning">Unenroll</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td><a class="text-dark" href="#" >Quiz-Maths Society</a></td>
+									<td>
+										<div class="btn-group">
+											<button class="btn btn-outline-primary">Details</button>
+											<button class="btn btn-outline-warning">Unenroll</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td><a class="text-dark" href="#" >Robo Fight</a></td>
+									<td>
+										<div class="btn-group">
+											<button class="btn btn-outline-primary">Details</button>
+											<button class="btn btn-outline-warning">Unenroll</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td><a class="text-dark" href="#" >Cards</a></td>
+									<td>
+										<div class="btn-group">
+											<button class="btn btn-outline-primary">Details</button>
+											<button class="btn btn-outline-warning">Unenroll</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td><a class="text-dark" href="#" >Debate</a></td>
+									<td>
+										<div class="btn-group">
+											<button class="btn btn-outline-primary">Details</button>
+											<button class="btn btn-outline-warning">Unenroll</button>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+
+						</table>
+
+
+
+					</div>
+				</div>
+
+				<div class="row mt-3">
+					<div class="col-9 offset-1">
+						<div class="card h4 bg-light">
+							<div class="card-body">
+								Want to enroll in more Events?<br>
+								<div class="h5 mt-3">
+									<a class="btn btn-success " href="#" >Click here!</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
 
 			</div>
 
 			<!-- Column that contains information like top perfomers etc. -->
-			<div class="col-12 col-md-4 col-offset-1">
+			<div class="col-12 col-md-4">
 				<!-- Row to praise the winners and participants -->
-
-				<div class="row justify-content-end text-center">
+				<div class="h3 mt-3 mb-4">Shout out's <a class="text-dark" data-toggle="tooltip" data-html="true" title="It's our Shout out <i class='fas fa-gift'></i> for<br><strong>Users who enrolled most</strong> and <br><strong> The users who won most</strong><br> of the 1st, 2nd, 3rd positions" data-placement="right" ><i class="fas fa-bullhorn "></i> </a></div>
+				<div class="row justify-content-end text-center mt-4">
 					<!-- Row for top performers -->
-					<div class="col-12 justify-content-end">
+					<div class="col-11 offset-1 justify-content-end">
 						<!-- Now, adding a card displaying the top perfomers -->
 						<div class="card">
 							<div class="card-header bg-secondary">
-								<div class="h4 text-white">Top performers</div>
+								<div class="h4 text-white">Top Enrollers <a data-toggle="tooltip" data-html="true" title="Following <i class='fa fa-hand-point-down'></i> are the users who enrolled in most events" data-placement="top"><i class="fas fa-bolt"></i></a> </div>
 							</div>
 							<div class="card-body">
-								<table class="table table-hover table-responsive">
+								<table class="table table-responsive-sm">
 									<thead class="thead-light">
 										<tr>
 											<th>Position</th>
@@ -125,9 +216,45 @@
 					</div>
 					
 				</div>
+
 				<div class="row">
 					<!-- Row to praise the user who won maximum prizes -->
+					<div class="col-11 offset-1 mt-4 mb-4">
+						<div class="card justify-content-center">
+							<div class="card-header bg-secondary text-center text-white h4 ">
+								Top Winner 
+								<a data-toggle="tooltip" data-html="true" title="Following <i class='fas fa-hand-point-down'></i> are the users who won most of the 1st, 2nd and 3rd positions" data-placement="top"><i class="fas fa-chart-line"></i></a>
+							</div>
+							<div class="card-body justify-content-center">
 
+								<table class="table table-responsive-sm text-center">
+									<thead class="thead-light">
+										<th scope="col">Position</th>
+										<th scope="col">Name</th>
+										<th scope="col">Wins</th>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>Avnish</td>
+											<td>3</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>Avnish</td>
+											<td>2</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>Avnish</td>
+											<td>1</td>
+										</tr>
+
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
 
 
 				</div>
